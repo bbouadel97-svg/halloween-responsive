@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+:root {
+    /* Halloween theme colors and fonts */
+    --header-height: 3.5rem;
+    --hue : 14;
+    --first-color: hsl(var(--hue), 100%, 50%);
+    --second-color: hsl(var(--hue), 100%, 30%);
+    --third-color: hsl(var(--hue), 100%, 70%);
+    --fourth-color: hsl(var(--hue), 100%, 90%);
+    --title-color: hsl(var(--hue), 100%, 50%);
+    --text-color: hsl(var(--hue), 100%, 50%);
+    --body-color: hsl(var(--hue), 100%, 10%);
+    --body-text-color: hsl(var(--hue), 100%, 50%);
+    --container-color : linear-gradient(136deg, hsl(var(--hue), 100%, 50%), hsl(var(--hue), 100%, 30%));
+    --body-font: 'Poppins', sans-serif;
+    --biggest-font-size: 2rem;
+    --h1-font-size: 1.75rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --normal-font-size: 1rem;
+    --smallest-font-size: 0.75rem;
+    --small-font-size: 0.625rem;
+    --medium-font-size: 0.9375rem;
+    --mb-0-25: 0.25rem;
+    --mb-0-5: 0.5rem;
+    --mb-0-75: 0.75rem;
+    --mb-1: 1rem;
+    --mb-1-5: 1.5rem;
+    --mb-2: 2rem;
+    --mb-2-5: 2.5rem;
+    --z-tooltip:10;
+    --z-fixed: 100;
+}
+@media screen and (max-width: 992px) {
+    :root {
+        --biggest-font-size: 4rem;
+        --h1-font-size: 2.25rem;
+        --h2-font-size: 1.5rem;
+        --h3-font-size: 1.125rem;
+        --h4-font-size: 1rem;
+        --small-font-size: 0.75rem;
+        --normal-font-size: 0.875rem;
+        --smallest-font-size: 0.813rem;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin : var(--header-height) 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--body-text-color);   
+}
+h1,h2,h3,h4{
+    color : var(--title-color);
+    font-weight : var(--font-semi-bold);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    display: auto;
+}
+button,
+input {
+    border : none;
+    outline: none;
+}
+
+button{
+    cursor: pointer;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+}
+.section{
+    padding : 4.5rem 0 2rem;
+}
+.section-title{
+    font-size: var(--h2-font-size);
+    margin-bottom: var(--mb-2);
+    text-align: center;
+
+}
+.container{
+    max-width: 968px;
+    margin-left: var(--mb-1-5);
+    margin-right: var(--mb-1-5);
+}
+.grid{
+    display: grid;
+}
+.main{
+    overflow: hidden;
+}
