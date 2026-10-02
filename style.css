@@ -402,6 +402,35 @@ button{
   gap: 1rem;
 }
 
+/*=============== CATEGORY ===============*/
+.category__container{
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 2rem 1.5rem;
+}
+
+.category__data{
+  padding: 1rem .75rem;
+  border-radius: 1rem;
+  background: var(--container-color);
+  text-align: center;
+}
+
+.category__img{
+  width: 120px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  margin-bottom: var(--mb-1);
+}
+
+.category__title{
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-0-25);
+}
+
+.category__description{
+  font-size: var(--small-font-size);
+}
+
 /*=============== BREAKPOINTS ===============*/
 @media screen and (min-width: 768px){
   body{
@@ -446,6 +475,15 @@ button{
 
   .home__details-img{
     right: 0;
+  }
+
+  .category__container{
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2rem;
+  }
+
+  .category__img{
+    width: 150px;
   }
 }
 
